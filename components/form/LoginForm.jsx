@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { AiFillEye } from "react-icons/ai";
 
@@ -10,10 +11,6 @@ function LoginForm({ className }) {
 
   const handelSubmit = (e) => {
     e.preventDefault();
-    // if (!email) {
-    //   setError(true);
-    //   return;
-    // }
     alert(password);
   };
 
@@ -47,7 +44,7 @@ function LoginForm({ className }) {
           />
           <div
             onClick={setHidden}
-            className={`absolute bottom-3 right-3 text-2xl m-0 cursur-pointer duration-200 ${
+            className={`absolute bottom-3 right-3 text-2xl m-0 cursor-pointer duration-200 ${
               type === "text" ? "text-violet-700" : "text-gray-300"
             } `}
           >
@@ -56,19 +53,18 @@ function LoginForm({ className }) {
           {/* {error && <p className="text-red-500">Password error.</p>} */}
         </div>
 
+        <Link href="#">
+          <a className="text-violet-700 font-bold block md:hover:text-violet-900">
+            Forget password?
+          </a>
+        </Link>
+
         <input
           type="submit"
           value="Login"
           className="bg-violet-800 hover:bg-violet-900 duration-200 text-white 
           p-3 w-full font-bold cursor-pointer"
         />
-
-        <a
-          href="#"
-          className="text-violet-700 font-bold block md:hover:text-violet-900"
-        >
-          Forget password?
-        </a>
       </form>
     </>
   );
