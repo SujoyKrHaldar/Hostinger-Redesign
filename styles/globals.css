@@ -1,9 +1,23 @@
+@import url("https://use.typekit.net/nyw3ccz.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: muli, sans-serif;
 }
 
 a {
@@ -11,16 +25,10 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-size: 3rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+p {
+  font-size: 1rem;
 }
