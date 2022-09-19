@@ -15,7 +15,7 @@ function Img({ src, alt, className = "", w, h, layout, position, objFit }) {
       width={w}
       loading="eager"
       className={`${className} duration-1000
-              ${isLoading ? "scale-105 opacity-0" : " blur-0 scale-100 "}`}
+              ${isLoading ? "opacity-0" : ""}`}
       onLoadingComplete={() => setLoading(false)}
     />
   );

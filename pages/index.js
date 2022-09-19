@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/layout/Navbar";
 
 export default function Home() {
   return (
@@ -11,7 +12,10 @@ export default function Home() {
         />
       </Head>
 
-      <h1>Hostinger</h1>
+      <Navbar />
+      <section>
+        <div className="container py-16"></div>
+      </section>
     </>
   );
 }

@@ -27,8 +27,8 @@ function Login() {
         </div>
 
         <div className="flex-1 h-full flex items-center">
-          <div className="space-y-4 ml-auto max-w-sm">
-            <p className="text-4xl font-semibold">Login</p>
+          <div className="space-y-5 ml-auto max-w-sm">
+            <p className="text-3xl font-semibold">Login</p>
 
             <LoginForm className="w-full" />
 

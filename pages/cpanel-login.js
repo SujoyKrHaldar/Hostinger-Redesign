@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CustomNavbar from "../components/layout/CustomNavbar";
 import Login from "../components/login/Login";
 
 Head;
@@ -11,6 +12,7 @@ function login() {
         <meta name="description" content="Login to Hostinger." />
       </Head>
 
+      <CustomNavbar />
       <Login />
     </>
   );

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AiFillEye } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
+import { SiFacebook } from "react-icons/si";
 
 function LoginForm({ className }) {
   const [type, setType] = useState("password");
@@ -26,7 +28,7 @@ function LoginForm({ className }) {
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full py-3 px-4 border border-gray-300 
+            className="w-full py-3 px-4 border border-gray-400 
             focus:border-violet-700 outline-none"
             type="email"
           />
@@ -38,7 +40,7 @@ function LoginForm({ className }) {
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full py-3 px-4 border border-gray-300 
+            className="w-full py-3 px-4 border border-gray-400 
             focus:border-violet-700 outline-none"
             type={type}
           />
@@ -63,8 +65,50 @@ function LoginForm({ className }) {
           type="submit"
           value="Login"
           className="bg-violet-800 hover:bg-violet-900 duration-200 text-white 
-          p-3 w-full font-bold cursor-pointer"
+          p-3 w-full font-bold cursor-pointer rounded-sm"
         />
+
+        <p>or login with</p>
+
+        <div className="flex items-center justify-between gap-4">
+          <div
+            className="bg-red-100 hover:bg-red-200 duration-200 
+          p-3 w-full font-bold cursor-pointer flex items-center justify-center gap-2 rounded-sm"
+          >
+            <div className="text-2xl">
+              <FcGoogle />
+            </div>
+          </div>
+
+          <div
+            className="bg-blue-100 hover:bg-blue-200 duration-200 
+          p-3 w-full font-bold cursor-pointer flex items-center justify-center gap-2 rounded-sm"
+          >
+            <div className="text-2xl text-blue-800">
+              <SiFacebook />
+            </div>
+          </div>
+        </div>
+
+        {/* <div
+          className="bg-red-50 hover:bg-red-100 duration-200 
+          p-3 w-full font-bold cursor-pointer flex items-center justify-center gap-2 rounded-sm"
+        >
+          <div className="text-2xl">
+            <FcGoogle />
+          </div>
+          <p className="pt-1">Continue with Google</p>
+        </div>
+
+        <div
+          className="bg-blue-50 hover:bg-blue-100 duration-200 
+          p-3 w-full font-bold cursor-pointer flex items-center justify-center gap-2 rounded-sm"
+        >
+          <div className="text-2xl text-blue-800">
+            <SiFacebook />
+          </div>
+          <p className="pt-1">Continue with Facebook</p>
+        </div> */}
       </form>
     </>
   );
