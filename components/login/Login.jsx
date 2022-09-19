@@ -12,6 +12,11 @@ function Login() {
           className="opacity-50"
         />
       </div>
+      <div className="absolute top-0 right-0 w-[350px] h-[350px] -z-10">
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-white z-10"></div>
+        <Img src="/assets/pattern-2.svg" alt="pattern" />
+      </div>
       <div className="container w-full h-full flex justify-between gap-4">
         <div className="flex-1 h-full flex items-end">
           <div className="space-y-3 py-16 max-w-md text-white">

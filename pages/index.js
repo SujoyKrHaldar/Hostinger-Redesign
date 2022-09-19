@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Navbar from "../components/layout/Navbar";
+import Landing from "../components/home/Landing";
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
   return (
@@ -12,10 +13,9 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar />
-      <section>
-        <div className="container py-16"></div>
-      </section>
+      <Layout>
+        <Landing />
+      </Layout>
     </>
   );
 }

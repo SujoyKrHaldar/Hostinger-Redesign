@@ -31,7 +31,7 @@ const navLink = [
 function Navbar() {
   return (
     <>
-      <header className="absolute inset-0 py-9 w-full h-fit z-10">
+      <header className="absolute inset-0 py-7 w-full h-fit z-10">
         <div className="container flex items-center justify-between gap-4">
           <Link href="/">
             <a className="inline-block w-[150px] h-[30px]">
@@ -42,14 +42,14 @@ function Navbar() {
           <nav className="flex items-center gap-8">
             {navLink.map((data, id) => (
               <Link key={id} href={data.url}>
-                <a className="font-bold">{data.name}</a>
+                <a className="font-bold hover:text-violet-700">{data.name}</a>
               </Link>
             ))}
 
             <Link href="/cpanel-login">
               <a
                 className="font-bold bg-violet-800 hover:bg-violet-900 duration-200
-               text-white py-3 px-8 rounded-sm"
+               text-white pt-3 pb-2 mb-1 px-8 rounded-sm"
               >
                 Login
               </a>
