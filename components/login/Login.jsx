@@ -1,5 +1,6 @@
 import Img from "../tools/Img";
 import LoginForm from "../form/LoginForm";
+import Link from "next/link";
 
 function Login() {
   return (
@@ -18,7 +19,10 @@ function Login() {
               Login to{" "}
               <span className="font-bold block text-7xl">Hostinger</span>
             </h1>
-            <p className=" max-w-xs">Go online with Hostinger and get started now. Make your perfect website today.</p>
+            <p className=" max-w-xs">
+              Go online with Hostinger and get started now. Make your perfect
+              website today.
+            </p>
           </div>
         </div>
 
@@ -30,10 +34,10 @@ function Login() {
 
             <p className="font-bold">
               Not a member yet?{" "}
-              <a href="/" className="text-violet-700">
-                Choose a hosting plan
-              </a>{" "}
-              and get started now!{" "}
+              <Link href="/">
+                <a className="text-violet-700">Choose a hosting plan </a>
+              </Link>
+              and get started now!
             </p>
           </div>
         </div>
