@@ -21,9 +21,9 @@ export default function Home() {
       <Layout>
         <Landing />
         <SupportComp />
-        {/* <Services />
-        <SearchDomain /> */}
-        <UserGuides />
+        <Services />
+        {/* <SearchDomain /> */}
+        {/* <UserGuides /> */}
         <GetStarted />
       </Layout>
     </>
