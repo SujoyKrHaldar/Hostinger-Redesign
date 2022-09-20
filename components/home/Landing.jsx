@@ -1,9 +1,13 @@
 import Link from "next/link";
+import Button from "../tools/Button";
 import Img from "../tools/Img";
 
 const parks = [
   {
     name: "Only with ₹149.00/mo.",
+  },
+  {
+    name: "Free domain, email and support included",
   },
   {
     name: "Get exclusive 30-day money-back guarantee.",
@@ -13,7 +17,7 @@ const parks = [
 function Landing() {
   return (
     <>
-      <section className="w-full h-[768px] py-16">
+      <section className="w-full h-[800px] py-16">
         <div className="absolute top-0 right-0 w-[30%] h-full">
           <Img src="/assets/pattern-3.svg" alt="pattern" />
         </div>
@@ -30,19 +34,19 @@ function Landing() {
               <span className="block">Your Website in Motion</span> at{" "}
               <span className="bg-violet-100">₹149.00/mo</span>.
             </h1>
-            <p className="max-w-lg mb-8">
+            <p className="max-w-lg mb-4">
               We are an employee-owned Web hosting provider and Internet domain
               registrar, established in 2004. Make moves with a free domain and
               SSL included with a four-year subscription.
             </p>
-            <Link href="#">
-              <a
-                className="bg-red-700 text-white pt-3 pb-2 px-8 rounded-full 
-              inline-block font-bold"
-              >
-                Get started
-              </a>
-            </Link>
+
+            <Button
+              href="#"
+              text="Get started"
+              design="bg-violet-500 pt-3 pb-2 px-8 text-white hover:bg-violet-700 duration-200"
+              visible="hidden"
+            />
+
             <div className="">
               <div className="">
                 <div className=""></div>

@@ -1,7 +1,10 @@
 import Head from "next/head";
 import GetStarted from "../components/home/GetStarted";
 import Landing from "../components/home/Landing";
+import SearchDomain from "../components/home/SearchDomain";
+import Services from "../components/home/Services";
 import SupportComp from "../components/home/SupportComp";
+import UserGuides from "../components/home/UserGuides";
 import Layout from "../components/layout/Layout";
 
 export default function Home() {
@@ -18,6 +21,9 @@ export default function Home() {
       <Layout>
         <Landing />
         <SupportComp />
+        {/* <Services />
+        <SearchDomain /> */}
+        <UserGuides />
         <GetStarted />
       </Layout>
     </>
