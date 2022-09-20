@@ -1,25 +1,47 @@
 import Button from "../../tools/Button";
+import Img from "../../tools/Img";
 
 function Wordpress() {
   return (
-    <section className="py-16">
-      <div className="container">
-        <div className="">
-          <p className="tag">GREAT WORDPRESS EXPERIENCE</p>
-          <h2 className="font-bold">WordPress made easy</h2>
-          <p>
-            Start your website with an automatic 1-click WordPress installation.
-            The backend is powered by LiteSpeed caching and advanced
-            optimization to ensure your websites are fast, reliable and secure.
-          </p>
+    <section className="py-16 bg-violet-200 z-10">
+      <div className="absolute top-0 right-0 w-[500px] h-full -z-10">
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-violet-200 z-10"></div>
+        <Img src="/assets/pattern-2.svg" alt="pattern" />
+      </div>
 
-          <Button
-            href="#"
-            text="Learn more"
-            design="border-2 border-black text-black hover:border-violet-500 
-            hover:text-violet-700 duration-200 rounded-none"
-          />
+      <div className="container">
+        <div className="h-[350px] flex items-center justify-between gap-4">
+          <div className="max-w-md">
+            <p className="tag">GREAT WORDPRESS EXPERIENCE</p>
+            <h2 className="font-bold">
+              {" "}
+              <span className="font-black text-violet-700">WordPress</span> made
+              easy
+            </h2>
+            <p>
+              Start your website with an automatic 1-click WordPress
+              installation. The backend is powered by LiteSpeed caching and
+              advanced optimization to ensure your websites are fast, reliable
+              and secure.
+            </p>
+
+            <Button
+              href="#"
+              text="Learn more"
+              design="bg-violet-500 mt-4 pt-3 pb-2 px-8 text-white hover:bg-violet-700 duration-200"
+            />
+          </div>
+
+          <div className="absolute -bottom-16 right-0 w-full max-w-[600px] h-[426px]">
+            <Img src="/assets/wordpress-preview.png" alt="wordpress" />
+          </div>
         </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-[200px] h-[200px] -z-10">
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-violet-200 z-10"></div>
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-b from-violet-200 z-10"></div>
+        <Img src="/assets/pattern-2.svg" alt="pattern" />
       </div>
     </section>
   );

@@ -18,13 +18,13 @@ function GetStarted() {
 
             <div className="flex items-center gap-4 mt-2 mb-4">
               <div className="flex items-center gap-2">
-                <div className="text-violet-100 bg-violet-300 p-[1px] rounded-full mb-1">
+                <div className="text-violet-100 bg-green-500 p-[1px] rounded-full mb-1">
                   <TiTick />
                 </div>
                 <p className="font-semibold">No hassle</p>
               </div>
               <div className="flex items-center gap-2">
-                <div className="text-violet-100 bg-violet-300 p-[1px] rounded-full mb-1">
+                <div className="text-violet-100 bg-green-500 p-[1px] rounded-full mb-1">
                   <TiTick />
                 </div>
                 <p className="font-semibold">No risk</p>

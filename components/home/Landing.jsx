@@ -1,11 +1,8 @@
-import Link from "next/link";
 import Button from "../tools/Button";
 import Img from "../tools/Img";
+import { TiTick } from "react-icons/ti";
 
 const parks = [
-  {
-    name: "Only with ₹149.00/mo.",
-  },
   {
     name: "Free domain, email and support included",
   },
@@ -27,7 +24,8 @@ function Landing() {
           <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-white z-10"></div>
           <Img src="/assets/pattern-2.svg" alt="pattern" />
         </div>
-        <div className="container w-full h-full flex items-center">
+
+        <div className="container w-full h-full flex items-center justify-between gap-4">
           <div className="max-w-2xl">
             <h1 className="font-black leading-[3.5rem] mb-4">
               Savings to Set{" "}
@@ -47,12 +45,23 @@ function Landing() {
               visible="hidden"
             />
 
-            <div className="">
-              <div className="">
-                <div className=""></div>
-                <p></p>
-              </div>
+            <div className="mt-4 space-y-1">
+              {parks.map((data, id) => (
+                <div key={id} className="flex items-center gap-2">
+                  <div
+                    className="text-violet-100 bg-green-500 p-[0.5px] 
+                  text-sm rounded-full mb-1"
+                  >
+                    <TiTick />
+                  </div>
+                  <p className="text-sm">{data.name}</p>
+                </div>
+              ))}
             </div>
+          </div>
+
+          <div className="flex-1 h-[450px] p-4">
+            <Img src="/assets/landing-image.webp" alt="landing image" />
           </div>
         </div>
       </section>

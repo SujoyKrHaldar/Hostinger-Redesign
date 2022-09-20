@@ -35,7 +35,10 @@ function Navbar() {
 
   return (
     <>
-      <header className="absolute inset-0 py-7 w-full h-fit z-10">
+      <header
+        className="fixed inset-0 w-full h-fit z-50 
+       bg-white border-b border-violet-200"
+      >
         <div className="container flex items-center justify-between gap-4">
           <Link href="/">
             <a className="inline-block w-[150px] h-[30px]">
@@ -47,10 +50,10 @@ function Navbar() {
             {navLink.map((data, id) => (
               <Link key={id} href={data.url}>
                 <a
-                  className={`font-bold ${
+                  className={`font-bold py-6 border-b-2 ${
                     router.pathname === data.url
-                      ? "text-violet-700"
-                      : "text-black "
+                      ? "text-violet-700 border-violet-400"
+                      : "text-black border-transparent "
                   } hover:text-violet-700`}
                 >
                   {data.name}

@@ -16,8 +16,8 @@ function SearchDomain() {
       <div className="container ">
         <div className="space-y-3 max-w-lg">
           <p className="tag">Search and buy</p>
-          <h2 className="">
-            Find the <span className="font-bold">Perfect Domain</span> for you.
+          <h2 className="font-bold">
+            Find the <span className="font-black text-violet-700">Perfect Domain</span> for you.
           </h2>
           <p className="max-w-lg">
             Success starts with the domain. Enter domain name of your choice and

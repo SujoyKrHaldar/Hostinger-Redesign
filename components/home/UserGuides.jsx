@@ -9,10 +9,11 @@ function UserGuides() {
   return (
     <>
       {/* <Setup />
-      <Performence />
+      <Performence /> */}
       <Wordpress />
       <Support />
-      <Scale /> */}
+
+      <Scale />
       <ControlPannel />
     </>
   );
