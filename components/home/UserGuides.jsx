@@ -8,11 +8,11 @@ import ControlPannel from "./guides/ControlPannel";
 function UserGuides() {
   return (
     <>
-      <Setup />
+      {/* <Setup />
       <Performence />
       <Wordpress />
       <Support />
-      <Scale />
+      <Scale /> */}
       <ControlPannel />
     </>
   );
