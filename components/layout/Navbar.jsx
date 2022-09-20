@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Img from "../tools/Img";
+import { HiMenuAlt3 } from "react-icons/hi";
 import { useRouter } from "next/router";
 
 const navLink = [
@@ -65,6 +66,10 @@ function Navbar() {
                 Login
               </a>
             </Link>
+
+            <div className="md:hidden cursor-pointer text-3xl hover:text-violet-700 duration-200">
+              <HiMenuAlt3 />
+            </div>
           </nav>
         </div>
       </header>

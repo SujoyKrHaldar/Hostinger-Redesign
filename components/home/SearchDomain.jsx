@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { GrFormClose } from "react-icons/gr";
+import Img from "../tools/Img";
 
 function SearchDomain() {
   const [data, setData] = useState("");
@@ -8,7 +9,10 @@ function SearchDomain() {
   const handelSubmit = () => {};
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-violet-50">
+      <div className="absolute top-0 right-0 w-[30%] h-full">
+        <Img src="/assets/domain-connection.png" alt="pattern" />
+      </div>
       <div className="container ">
         <div className="space-y-3 max-w-lg">
           <p className="tag">Search and buy</p>
