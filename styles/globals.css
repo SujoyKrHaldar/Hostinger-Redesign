@@ -29,6 +29,16 @@ h1 {
   font-size: 3rem;
 }
 
+h2{
+  font-size: 2rem;
+}
+
 p {
   font-size: 1rem;
+}
+
+.tag {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }

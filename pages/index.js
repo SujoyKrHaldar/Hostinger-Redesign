@@ -1,5 +1,7 @@
 import Head from "next/head";
+import GetStarted from "../components/home/GetStarted";
 import Landing from "../components/home/Landing";
+import SupportComp from "../components/home/SupportComp";
 import Layout from "../components/layout/Layout";
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
 
       <Layout>
         <Landing />
+        <SupportComp />
+        <GetStarted />
       </Layout>
     </>
   );
