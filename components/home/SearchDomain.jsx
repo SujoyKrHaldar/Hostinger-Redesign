@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { GrFormClose } from "react-icons/gr";
@@ -6,7 +7,9 @@ import Img from "../tools/Img";
 function SearchDomain() {
   const [data, setData] = useState("");
 
-  const handelSubmit = () => {};
+  const handelSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <section className="py-16 z-10">
@@ -37,8 +40,8 @@ function SearchDomain() {
                 value={data}
                 onChange={(e) => setData(e.target.value)}
                 type="text"
-                className="w-full py-3 px-4 border border-gray-400 
-                focus:border-violet-700 outline-none"
+                className="w-full py-3 px-4 border border-violet-700 
+                 outline-none"
                 placeholder="Type your perfect domain here"
               />
 
@@ -65,7 +68,12 @@ function SearchDomain() {
             />
           </form>
 
-          <p>.com starts from ₹299.00/mo</p>
+          <p>
+            .com starts from ₹299.00/mo.{" "}
+            <Link href="/">
+              <a className="hover:underline">View price list.</a>
+            </Link>
+          </p>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import Img from "../tools/Img";
 function ConnectingPeople() {
   return (
-    <section className="py-16">
+    <section className="pt-16 pb-4">
       <div className="container text-center">
         <div className="max-w-lg mx-auto space-y-2">
           <p className="tag">Connecting people</p>

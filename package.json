@@ -13,7 +13,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-responsive-masonry": "^2.1.5"
+    "react-responsive-masonry": "^2.1.5",
+    "sharp": "^0.31.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.11",

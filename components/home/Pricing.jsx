@@ -58,11 +58,11 @@ const buisnessServices = [
 
 function Pricing() {
   return (
-    <section id="start-with-premium" className="py-16">
+    <section id="start-with-premium" className="pt-24 pb-16">
       <div className="container flex items-center justify-between gap-4">
         <div className="flex-1 max-w-md">
           <div className="absolute w-[180px] h-[140px] top-[-7rem] right-[-5rem] -rotate-45 ">
-            <Img src="/assets/arrow-top.svg" alt="" />
+            <Img src="/assets/arrow-top.svg" alt="" className="opacity-50" />
           </div>
 
           <p className="tag">Best value</p>
@@ -83,7 +83,7 @@ function Pricing() {
         </div>
 
         <div className="flex-1 flex items-end justify-end gap-4">
-          <div className="border-2 border-violet-700 ">
+          <div className="border-2 border-violet-700 md:hover:border-violet-900 duration-200">
             <div className="p-6 bg-violet-300">
               <div className="absolute w-[115px] h-[85px] top-4 left-0 ">
                 <Img src="/assets/circle.svg" alt="" />
@@ -113,7 +113,7 @@ function Pricing() {
             />
           </div>
 
-          <div className="border-2 border-gray-200 ">
+          <div className="border-2 border-gray-200 md:hover:border-violet-700 duration-200">
             <div className="p-6 pb-0">
               <p className="font-bold">Buisness</p>
               <h2 className="font-black">₹ 249.00 /mo </h2>
@@ -135,8 +135,8 @@ function Pricing() {
             <Button
               href="/"
               text="Continue"
-              design="rounded-none m-0 bg-violet-500 text-white 
-              hover:bg-violet-700 duration-200"
+              design="rounded-none m-0 bg-violet-500 text-black bg-white 
+              md:hover:bg-violet-700 md:hover:text-white duration-200"
             />
           </div>
         </div>

@@ -63,16 +63,16 @@ function Services() {
   return (
     <section className="py-16">
       <div className="container">
-        <div className="space-y-4">
+        <div className=" text-center">
           <p className="tag">our Services</p>
-          <h2>
-            What we will <span className="font-bold">Offer</span>
+          <h2 className="font-bold">
+            What we will <span className="font-black text-violet-700">Offer</span>
           </h2>
 
-          <div className="flex items-center justify-center flex-wrap gap-2">
+          <div className="grid grid-cols-6 mt-6 gap-[1px] bg-violet-200 p-[1px]">
             {services.map((data, id) => (
-              <div key={id} className="text-center p-6 bg-violet-50 border border-violet-100">
-                <div className="text-white w-[50px] mx-auto mb-4 p-2 rounded-lg bg-violet-400">
+              <div key={id} className="text-center p-6 bg-violet-50 bg-white">
+                <div className="text-violet-500 w-[50px] mx-auto mb-4 p-2 rounded-lg bg-white">
                   {data.icon}
                 </div>
                 <p className="font-bold">{data.name}</p>

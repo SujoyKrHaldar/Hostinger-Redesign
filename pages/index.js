@@ -24,7 +24,7 @@ export default function Home() {
       <Layout>
         <Landing />
         <SupportComp />
-        {/* <Services /> */}
+        <Services />
         <SearchDomain />
         <UserGuides />
         <Testimonials />
