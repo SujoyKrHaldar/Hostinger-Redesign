@@ -9,15 +9,18 @@ function SearchDomain() {
   const handelSubmit = () => {};
 
   return (
-    <section className="py-16 bg-violet-50">
-      <div className="absolute top-0 right-0 w-[30%] h-full">
-        <Img src="/assets/domain-connection.png" alt="pattern" />
+    <section className="py-16 z-10">
+      <div className="absolute top-0 right-0 w-[75%] h-full -z-10">
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
+        <Img src="/assets/earth.png" alt="Domain" />
       </div>
       <div className="container ">
         <div className="space-y-3 max-w-lg">
           <p className="tag">Search and buy</p>
           <h2 className="font-bold">
-            Find the <span className="font-black text-violet-700">Perfect Domain</span> for you.
+            Find the{" "}
+            <span className="font-black text-violet-700">Perfect Domain</span>{" "}
+            for you.
           </h2>
           <p className="max-w-lg">
             Success starts with the domain. Enter domain name of your choice and

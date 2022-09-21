@@ -43,7 +43,7 @@ function Landing() {
               <Img
                 src="/assets/underline-black.svg"
                 alt=""
-                className="opacity-20"
+                className="opacity-70"
               />
             </div>
 
@@ -56,7 +56,7 @@ function Landing() {
             </div>
 
             <Button
-              href="#"
+              href="#start-with-premium"
               text="Get started"
               design="bg-violet-500 pt-3 pb-2 px-8 text-white hover:bg-violet-700 duration-200"
               visible="hidden"

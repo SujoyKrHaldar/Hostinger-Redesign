@@ -1,10 +1,15 @@
 import Button from "../../tools/Button";
+import Img from "../../tools/Img";
+
 
 function Support() {
   return (
-    <section className="py-16 ">
-      <div className="container">
-        <div className="max-w-md">
+    <section className="pt-16">
+      <div className="container flex items-center justify-between gap-4">
+        <div className="flex-1 max-w-xl mx-auto h-[500px] border-b">
+          <Img src="/assets/support.png" alt="scale" />
+        </div>
+        <div className="flex-1 max-w-md mx-auto">
           <p className="tag">24/7 Support</p>
           <h2 className="font-bold">
             Always by{" "}

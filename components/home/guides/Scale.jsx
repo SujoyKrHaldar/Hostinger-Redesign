@@ -3,9 +3,9 @@ import Img from "../../tools/Img";
 
 function Scale() {
   return (
-    <section className="py-16">
+    <section className="pb-16">
       <div className="container">
-        <div className="p-16 bg-violet-200 flex items-center justify-between gap-4 ">
+        <div className="p-16 bg-violet-200 flex items-center justify-between gap-4 z-10">
           <div className="flex-1 max-w-md">
             <p className="tag">FLEXIBLE AND SCALABLE</p>
             <h2 className="font-bold mb-1">
@@ -27,8 +27,25 @@ function Scale() {
             />
           </div>
 
-          <div className="flex-1 w-full h-[250px]">
-            <Img src="/assets/scale.png" alt="scale" />
+          <div className="flex-1 w-full max-w-[250px] mx-auto h-[250px]">
+            <Img src="/assets/graph-scale.png" alt="scale" />
+          </div>
+
+          <div className="absolute top-0 right-0 w-[30%] h-full -z-10">
+            <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-violet-200 z-10"></div>
+            <Img
+              src="/assets/pattern-2.svg"
+              alt="Pattern"
+              className="opacity-50"
+            />
+          </div>
+          <div className="absolute bottom-0 left-0 w-[200px] h-[200px] -z-10">
+            <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-violet-200 z-10"></div>
+            <Img
+              src="/assets/pattern-3.svg"
+              alt="Pattern"
+              className="opacity-50"
+            />
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ function UserGuides() {
       <Performence /> */}
       <Wordpress />
       <Support />
-
       <Scale />
       <ControlPannel />
     </>

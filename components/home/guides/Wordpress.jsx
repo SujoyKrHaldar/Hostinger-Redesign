@@ -3,7 +3,7 @@ import Img from "../../tools/Img";
 
 function Wordpress() {
   return (
-    <section className="py-16 bg-violet-200 z-10">
+    <section className="py-16 bg-violet-200 z-10 border-b-2 border-violet-300">
       <div className="absolute top-0 right-0 w-[500px] h-full -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-violet-200 z-10"></div>
         <Img src="/assets/pattern-2.svg" alt="pattern" />
@@ -15,7 +15,7 @@ function Wordpress() {
             <p className="tag">GREAT WORDPRESS EXPERIENCE</p>
             <h2 className="font-bold">
               {" "}
-              <span className="font-black text-violet-700">WordPress</span> made
+              <span className="font-black text-violet-800">WordPress</span> made
               easy
             </h2>
             <p>
