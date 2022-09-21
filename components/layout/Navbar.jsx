@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import Img from "../tools/Img";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { useRouter } from "next/router";
@@ -33,12 +34,27 @@ const navLink = [
 function Navbar() {
   const router = useRouter();
 
+  const [bg, setBg] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => window.removeEventListener("scroll", changeBackground);
+  }, []);
+
+  const changeBackground = () => {
+    window.scrollY > 420
+      ? setBg("bg-white border-violet-200")
+      : setBg("bg-transparent border-transparent");
+  };
+
+  const openMenu = () => {
+    setIsOpen(true);
+  };
+
   return (
     <>
-      <header
-        className="fixed inset-0 w-full h-fit z-50 
-       bg-white border-b border-violet-200"
-      >
+      <header className={`fixed inset-0 w-full h-fit z-50 ${bg} border-b duration`}>
         <div className="container flex items-center justify-between gap-4">
           <Link href="/">
             <a className="inline-block w-[150px] h-[30px]">

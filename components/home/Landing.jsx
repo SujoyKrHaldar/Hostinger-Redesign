@@ -15,7 +15,8 @@ function Landing() {
   return (
     <>
       <section className="w-full h-[800px] py-16">
-        <div className="absolute top-0 right-0 w-[30%] h-full">
+        <div className="absolute top-0 right-0 w-[30%] h-full -z-10">
+          <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-white z-10"></div>
           <Img src="/assets/pattern-3.svg" alt="pattern" />
         </div>
 
@@ -37,6 +38,22 @@ function Landing() {
               registrar, established in 2004. Make moves with a free domain and
               SSL included with a four-year subscription.
             </p>
+
+            <div className="absolute w-[276px] h-[10px] left-[4rem] top-[10rem] ">
+              <Img
+                src="/assets/underline-black.svg"
+                alt=""
+                className="opacity-20"
+              />
+            </div>
+
+            <div className="absolute w-[130px] h-[140px] left-[-5rem] bottom-[5rem] ">
+              <Img
+                src="/assets/arrow-right.svg"
+                alt=""
+                className="opacity-50"
+              />
+            </div>
 
             <Button
               href="#"
@@ -60,8 +77,8 @@ function Landing() {
             </div>
           </div>
 
-          <div className="flex-1 h-[450px] p-4">
-            <Img src="/assets/landing-image.webp" alt="landing image" />
+          <div className="flex-1 h-[550px]">
+            <Img src="/assets/landing-image.png" alt="landing image" />
           </div>
         </div>
       </section>
