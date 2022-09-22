@@ -9,9 +9,9 @@ function Footer() {
       <div className="absolute top-0 right-0 w-[30%] h-full -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-violet-700 z-10"></div>
         <div className="absolute w-full h-full inset-0 bg-gradient-to-b from-violet-700 z-10"></div>
-
         <Img src="/assets/pattern-4.svg" alt="Pattern" className="opacity-30" />
       </div>
+
       <div className="container">
         <FooterTop />
         <FooterMiddle />

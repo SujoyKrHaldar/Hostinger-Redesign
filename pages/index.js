@@ -30,9 +30,9 @@ export default function Home() {
         <SearchDomain />
         <UserGuides />
         <Testimonials />
-        <ConnectingPeople />
+        <ConnectingPeople /> */}
         <Pricing />
-        <GetStarted /> */}
+        <GetStarted />
       </Layout>
     </>
   );

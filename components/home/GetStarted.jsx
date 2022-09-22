@@ -5,21 +5,21 @@ import { TiTick } from "react-icons/ti";
 function GetStarted() {
   return (
     <>
-      <section className="py-8">
-        <div className="absolute top-0 left-0 w-[150px] h-1/2 -z-10">
+      <section className="py-12 sm:py-8 bg-violet-50 sm:bg-transparent">
+        <div className="absolute top-0 left-0 w-[200px] h-1/2 -z-10">
           <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-white z-10"></div>
           <div className="absolute w-full h-full inset-0 bg-gradient-to-b from-white z-10"></div>
-          <Img
-            src="/assets/pattern-3.svg"
-            alt="Pattern"
-            
-          />
+          <Img src="/assets/pattern-4.svg" alt="Pattern" className="opacity-50"/>
         </div>
-        <div className="absolute w-full h-1/2 bottom-0 left-0 bg-violet-700"></div>
+
+        <div className="hidden sm:block absolute w-full h-1/2 bottom-0 left-0 bg-violet-700"></div>
+
         <div className="container ">
-          <div className="bg-violet-50 p-16 rounded-lg overflow-hidden z-10">
+          <div className="sm:bg-violet-50 sm:p-16 rounded-lg overflow-hidden z-10">
             <p className="tag">Why are you waiting for</p>
-            <h2 className="font-black mt-2 ">30 days money back guarantee</h2>
+            <h2 className="font-black my-2 leading-10">
+              30 days money back guarantee
+            </h2>
             <p>
               We'll refund your payment if you’re not 100% satisfied with
               Hostinger.
@@ -47,10 +47,11 @@ function GetStarted() {
               visible="hidden"
             />
 
-            <div className="absolute top-0 right-0 w-[30%] h-full -z-10">
+            <div className="hidden sm:block absolute top-0 right-0 w-[30%] h-full -z-10">
               <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-violet-50 z-10"></div>
               <Img src="/assets/pattern-2.svg" alt="Pattern" />
             </div>
+
             <div className="absolute top-0 left-0 w-[20%] h-full -z-10">
               <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-violet-50 z-10"></div>
               <Img
