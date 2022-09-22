@@ -149,7 +149,7 @@ function Navbar() {
               <Link href="/cpanel-login">
                 <a
                   className="font-bold bg-violet-800 hover:bg-violet-900 duration-200
-               text-white pt-3 pb-2 mb-1 px-8 rounded-lg"
+               text-white pt-3 pb-2 px-8 rounded-lg"
                 >
                   Login
                 </a>
@@ -165,7 +165,8 @@ function Navbar() {
           </nav>
         </div>
       </header>
-      {isOpen && <MobileMenu data={navLink} setIsOpen={setIsOpen} isOpen={isOpen}/>}
+
+      <MobileMenu data={navLink} setIsOpen={setIsOpen} isOpen={isOpen} />
 
       {/* <header className="absolute inset-0 w-full h-fit z-10 bg-white">
         <div className="bg-violet-200 ">

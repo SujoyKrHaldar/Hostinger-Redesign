@@ -1,45 +1,46 @@
 import Link from "next/link";
-import { MdOutlineClose, MdKeyboardArrowDown } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
+import MobMenuDropdown from "./MobMenuDropdown";
 
 function MobileMenu({ data, setIsOpen, isOpen }) {
   return (
-    <section className="block lg:hidden fixed top-0 left-0 w-screen h-screen z-50 ">
+    <section
+      className="w-screen h-full fixed top-0 right-0 z-50
+      overflow-hidden pointer-events-none flex items-center justify-end"
+    >
       <div
-        className={`max-w-[600px] ml-auto h-full p-10 bg-white 
-      flex items-center border-2 border-violet-500 ${
-        isOpen ? "translate-x-full" : "translate-x-0"
-      }`}
+        className={`flex-1 px-12 py-8 h-full max-w-[460px] bg-white border-l-2 border-violet-500
+          flex items-center justify-start pointer-events-auto duration-300 overflow-scroll
+          ${
+            isOpen
+              ? " translate-x-0 opacity-100 duration-200"
+              : " translate-x-full opacity-0 duration-200"
+          }
+        
+          `}
       >
         <div
           onClick={() => setIsOpen(false)}
-          className="absolute p-1 bg-violet-500 text-white 
-          rounded-lg top-5 right-10 cursor-pointer text-3xl"
+          className="absolute z-10 p-1 bg-violet-500 text-white 
+          rounded-lg top-7 right-5 cursor-pointer text-3xl"
         >
           <MdOutlineClose />
         </div>
-        <div className="space-y-4 w-full">
+
+        <div className="space-y-5 w-full">
+          <p className="tag">Menu</p>
           {data.map((link, id) => (
             <>
               {link.subLinks ? (
-                <div key={id} className="space-y-2">
-                  <div className="flex items-center justify-between gap-4">
-                    <p className="font-bold text-2xl">{link.name}</p>
-                    <div className="text-2xl">
-                      <MdKeyboardArrowDown />
-                    </div>
-                  </div>
-
-                  <div className="p-4 border-l-2 border-black space-y-2">
-                    {link.subLinks.map((data, id) => (
-                      <Link key={id} href={data.url}>
-                        <a className=" text-lg block">{data.name}</a>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                <MobMenuDropdown key={id} data={link} setIsOpen={setIsOpen} />
               ) : (
                 <Link href={link.url}>
-                  <a className="inline-block font-bold text-2xl">{link.name}</a>
+                  <a
+                    onClick={() => setIsOpen(false)}
+                    className="block font-bold text-xl"
+                  >
+                    {link.name}
+                  </a>
                 </Link>
               )}
             </>
