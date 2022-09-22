@@ -34,7 +34,7 @@ function MobileMenu({ data, setIsOpen, isOpen }) {
               {link.subLinks ? (
                 <MobMenuDropdown key={id} data={link} setIsOpen={setIsOpen} />
               ) : (
-                <Link href={link.url}>
+                <Link key={id} href={link.url}>
                   <a
                     onClick={() => setIsOpen(false)}
                     className="block font-bold text-xl"

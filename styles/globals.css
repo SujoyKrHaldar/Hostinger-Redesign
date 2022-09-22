@@ -20,6 +20,13 @@ body {
   font-family: muli, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 87%;
+  }
 }
 
 ::-webkit-scrollbar {

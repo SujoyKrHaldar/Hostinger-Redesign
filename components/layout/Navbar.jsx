@@ -167,45 +167,6 @@ function Navbar() {
       </header>
 
       <MobileMenu data={navLink} setIsOpen={setIsOpen} isOpen={isOpen} />
-
-      {/* <header className="absolute inset-0 w-full h-fit z-10 bg-white">
-        <div className="bg-violet-200 ">
-          <div className="container flex items-center justify-between gap-4 py-3 text-sm">
-            <p>English</p>
-            <div className="flex gap-8 items-center">
-              <Link href="/cpanel-login">
-                <a className="">Cart</a>
-              </Link>
-              <Link href="/cpanel-login">
-                <a className="font-bold">Login</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="container flex items-center justify-between gap-4 py-6">
-          <Link href="/">
-            <a className="inline-block w-[150px] h-[30px]">
-              <Img src="/logo_blue.png" alt="Logo" />
-            </a>
-          </Link>
-
-          <nav className="flex items-center gap-8">
-            {navLink.map((data, id) => (
-              <Link key={id} href={data.url}>
-                <a
-                  className={`font-bold ${
-                    router.pathname === data.url
-                      ? "text-violet-700"
-                      : "text-black "
-                  } hover:text-violet-700`}
-                >
-                  {data.name}
-                </a>
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </header> */}
     </>
   );
 }
