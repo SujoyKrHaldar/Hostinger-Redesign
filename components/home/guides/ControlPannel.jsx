@@ -58,7 +58,7 @@ function ControlPannel() {
         </div>
 
         <div
-          className="absolute top-0 -right-44 w-full max-w-[874px] h-[400px] 
+          className="absolute -top-16 -right-44 w-full max-w-[874px] h-[400px] 
         -z-10 border-2 border-violet-50 bg-violet-50"
         >
           <div className="absolute w-1/3 h-full inset-0 bg-gradient-to-r from-white z-10"></div>

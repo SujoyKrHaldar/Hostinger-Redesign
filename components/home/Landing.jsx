@@ -77,7 +77,7 @@ function Landing() {
             </div>
           </div>
 
-          <div className="flex-1 h-[550px]">
+          <div className="flex-1 mx-auto max-w-lg h-[506px]">
             <Img src="/assets/landing-image.png" alt="landing image" />
           </div>
         </div>
