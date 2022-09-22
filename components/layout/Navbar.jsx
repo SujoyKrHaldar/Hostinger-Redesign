@@ -54,11 +54,11 @@ function Navbar() {
 
   return (
     <>
-      <header className={`fixed inset-0 w-full h-fit z-50 ${bg} border-b duration`}>
+      <header className={`fixed lg:py-0 py-6 inset-0 w-full h-fit z-50 ${bg} border-b duration`}>
         <div className="container flex items-center justify-between gap-4">
           <Link href="/">
-            <a className="inline-block w-[150px] h-[30px]">
-              <Img src="/logo_blue.png" alt="Logo" />
+            <a className="inline-block w-[150px]">
+              <Img src="/logo_blue.png" alt="Logo" layout="responsive" w={150} h={30} />
             </a>
           </Link>
 
@@ -66,7 +66,7 @@ function Navbar() {
             {navLink.map((data, id) => (
               <Link key={id} href={data.url}>
                 <a
-                  className={`font-bold py-6 border-b-2 ${
+                  className={`hidden lg:block font-bold pt-6 pb-5 border-b-2 ${
                     router.pathname === data.url
                       ? "text-violet-700 border-violet-400"
                       : "text-black border-transparent "
@@ -86,7 +86,7 @@ function Navbar() {
               </a>
             </Link>
 
-            <div className="md:hidden cursor-pointer text-3xl hover:text-violet-700 duration-200">
+            <div className="lg:hidden cursor-pointer text-3xl hover:text-violet-700 duration-200">
               <HiMenuAlt3 />
             </div>
           </nav>

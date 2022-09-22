@@ -77,9 +77,9 @@ function Services() {
             <span className="font-black text-violet-700">Offer</span>
           </h2>
 
-          <div className="grid grid-cols-6 mt-6 gap-[1px] bg-violet-200 p-[1px]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 mt-6 gap-[1px] bg-violet-200 p-[1px]">
             {services.map((data, id) => (
-              <div key={id} className="text-center p-6 bg-white">
+              <div key={id} className="text-center p-4 sm:p-6 bg-white">
                 <div
                   className="font-bold flex items-center justify-center
                  text-violet-500 w-[50px] mx-auto mb-4 p-2 rounded-lg bg-white text-2xl 

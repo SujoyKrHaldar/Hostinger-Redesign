@@ -25,11 +25,11 @@ export default function Home() {
       <Layout>
         {/* <Loader/> */}
         <Landing />
-        {/* <SupportComp />
+        <SupportComp />
         <Services />
-        <SearchDomain />
-        <UserGuides />
-        <Testimonials /> */}
+        {/* <SearchDomain />
+        <UserGuides /> */}
+        {/* <Testimonials /> */}
         <ConnectingPeople />
         <Pricing />
         <GetStarted />

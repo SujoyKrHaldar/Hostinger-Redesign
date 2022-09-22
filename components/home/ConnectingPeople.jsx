@@ -1,4 +1,5 @@
 import Img from "../tools/Img";
+
 function ConnectingPeople() {
   return (
     <section className="pt-16 pb-4">
@@ -11,8 +12,14 @@ function ConnectingPeople() {
           <p>With our best service, make it easy for user to touch them. </p>
         </div>
 
-        <div className="w-full max-w-[360px] mx-auto h-[366px] my-8">
-          <Img src="/assets/earth-domain.png" alt="Domain" />
+        <div className="w-full max-w-md mx-auto h-auto my-8">
+          <Img
+            src="/assets/earth-domain.png"
+            w={360}
+            h={366}
+            alt="Domain"
+            layout="responsive"
+          />
         </div>
       </div>
     </section>
