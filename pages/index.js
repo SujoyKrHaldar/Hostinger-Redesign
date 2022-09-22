@@ -29,8 +29,8 @@ export default function Home() {
         <Services />
         <SearchDomain />
         <UserGuides />
-        <Testimonials />
-        <ConnectingPeople /> */}
+        <Testimonials /> */}
+        <ConnectingPeople />
         <Pricing />
         <GetStarted />
       </Layout>
