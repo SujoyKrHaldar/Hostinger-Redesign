@@ -59,7 +59,7 @@ const helperLink = [
 
 function FooterMiddle() {
   return (
-    <div className="text-violet-100 py-4 md:flex items-end justify-between gap-4">
+    <div className="text-violet-100 py-4 space-y-8 md:space-y-0 md:flex items-end justify-between gap-4">
       <div className="space-y-2">
         <p className="font-bold">Follow us</p>
         <div className="flex items-center gap-4">
@@ -71,7 +71,7 @@ function FooterMiddle() {
         </div>
       </div>
 
-      <div className="flex items-center justify-start gap-4 flex-wrap">
+      <div className="flex items-center justify-start gap-y-1 gap-x-4 flex-wrap">
         {helperLink.map((data, id) => (
           <Link href={data.url} key={id}>
             <a className="block text-sm md:hover:underline">{data.name}</a>

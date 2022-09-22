@@ -140,69 +140,84 @@ const company = [
 function FooterTop() {
   return (
     <div
-      className="py-4 text-violet-100 space-y-3
-     md:space-y-0 md:flex md:items-start md:justify-between gap-4 "
+      className="py-4 text-violet-100 space-y-8
+     xl:space-y-0 xl:flex items-start justify-between gap-4 "
     >
-      <div className="space-y-4 max-w-md">
-        <div className="w-[150px] h-[30px]">
-          <Img src="/logo_white.webp" alt="Logo" />
+      <div className=" space-y-4 md:space-y-0 xl:space-y-4 md:flex items-start justify-between gap-4 xl:block">
+        <div className="space-y-3 max-w-md">
+          <div className="w-[150px] h-[30px]">
+            <Img src="/logo_white.webp" alt="Logo" />
+          </div>
+          <p>
+            We are a web hosting company with a mission to help everyone who
+            goes online succeed. We accomplish this by continuously developing
+            server technology, giving expert assistance, and ensuring a flawless
+            online website hosting experience.
+          </p>
         </div>
-        <p>
-          We are a web hosting company with a mission to help everyone who goes
-          online succeed. We accomplish this by continuously developing server
-          technology, giving expert assistance, and ensuring a flawless online
-          website hosting experience.
-        </p>
-        <p className="font-bold">Payment methods</p>
-        <div className="w-[280px] h-[36px]">
-          <Img src="/assets/payment_gateways.png" alt="payment gateways" />
-        </div>
-        <Link href="/">
-          <a className="inline-block font-sm md:hover:underline">and more</a>
-        </Link>
-      </div>
 
-      <div className="space-y-3">
-        <p className="font-bold text-xl">Hosting</p>
-        <div className="md:block md:space-y-2 flex items-center justify-start gap-3 flex-wrap">
-          {hosting.map((data, id) => (
-            <Link href={data.url} key={id}>
-              <a className="block text-sm md:hover:underline">{data.name}</a>
-            </Link>
-          ))}
+        <div className="space-y-3">
+          <p className="font-bold">Payment methods</p>
+          <div className="w-[280px] h-[36px]">
+            <Img src="/assets/payment_gateways.png" alt="payment gateways" />
+          </div>
+          <Link href="/">
+            <a className="inline-block font-sm md:hover:underline">and more</a>
+          </Link>
         </div>
       </div>
 
-      <div className="space-y-3">
-        <p className="font-bold text-xl">Domain</p>
-        <div className="md:block md:space-y-2 flex items-center justify-start gap-3 flex-wrap">
-          {domain.map((data, id) => (
-            <Link href={data.url} key={id}>
-              <a className="block text-sm md:hover:underline">{data.name}</a>
-            </Link>
-          ))}
+      <div className="block space-y-8 sm:space-y-0 sm:flex items-start justify-between gap-8">
+        <div className="space-y-3">
+          <p className="font-bold text-xl underline underline-offset-8 sm:no-underline">
+            Hosting
+          </p>
+          <div className="md:block md:space-y-2 flex items-center justify-start gap-y-1 gap-x-4 flex-wrap">
+            {hosting.map((data, id) => (
+              <Link href={data.url} key={id}>
+                <a className="block text-sm md:hover:underline">{data.name}</a>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="space-y-3">
-        <p className="font-bold text-xl">Information</p>
-        <div className="md:block md:space-y-2 flex items-center justify-start gap-3 flex-wrap">
-          {info.map((data, id) => (
-            <Link href={data.url} key={id}>
-              <a className="block text-sm md:hover:underline">{data.name}</a>
-            </Link>
-          ))}
+        <div className="space-y-3">
+          <p className="font-bold text-xl underline underline-offset-8 sm:no-underline">
+            Domain
+          </p>
+          <div className="md:block md:space-y-2 flex items-center justify-start gap-y-1 gap-x-4 flex-wrap">
+            {domain.map((data, id) => (
+              <Link href={data.url} key={id}>
+                <a className="block text-sm md:hover:underline">{data.name}</a>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="space-y-3">
-        <p className="font-bold text-xl">Company</p>
-        <div className="md:block md:space-y-2 flex items-center justify-start gap-3 flex-wrap">
-          {company.map((data, id) => (
-            <Link href={data.url} key={id}>
-              <a className="block text-sm md:hover:underline">{data.name}</a>
-            </Link>
-          ))}
+        <div className="space-y-3">
+          <p className="font-bold text-xl underline underline-offset-8 sm:no-underline">
+            Information
+          </p>
+          <div className="md:block md:space-y-2 flex items-center justify-start gap-y-1 gap-x-4 flex-wrap">
+            {info.map((data, id) => (
+              <Link href={data.url} key={id}>
+                <a className="block text-sm md:hover:underline">{data.name}</a>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <p className="font-bold text-xl underline underline-offset-8 sm:no-underline">
+            Company
+          </p>
+          <div className="md:block md:space-y-2 flex items-center justify-start gap-y-1 gap-x-4 flex-wrap">
+            {company.map((data, id) => (
+              <Link href={data.url} key={id}>
+                <a className="block text-sm md:hover:underline">{data.name}</a>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

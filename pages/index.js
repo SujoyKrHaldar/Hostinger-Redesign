@@ -9,6 +9,7 @@ import SupportComp from "../components/home/SupportComp";
 import Testimonials from "../components/home/Testimonials";
 import UserGuides from "../components/home/UserGuides";
 import Layout from "../components/layout/Layout";
+import Loader from "../components/tools/Loader";
 
 export default function Home() {
   return (
@@ -22,15 +23,16 @@ export default function Home() {
       </Head>
 
       <Layout>
+        {/* <Loader/> */}
         <Landing />
-        <SupportComp />
+        {/* <SupportComp />
         <Services />
         <SearchDomain />
         <UserGuides />
         <Testimonials />
         <ConnectingPeople />
         <Pricing />
-        <GetStarted />
+        <GetStarted /> */}
       </Layout>
     </>
   );
