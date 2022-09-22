@@ -13,7 +13,6 @@ function SearchDomain() {
 
   return (
     <section className="py-8 md:py-16 z-10 overflow-hidden">
-
       <div className="w-full md:absolute top-0 right-0 md:w-[75%] h-full -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
         <Img

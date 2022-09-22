@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Img from "../tools/Img";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { useRouter } from "next/router";
+import MobileMenu from "./components/MobileMenu";
 
 const navLink = [
   {
@@ -11,23 +12,82 @@ const navLink = [
   },
   {
     name: "Domain",
-    url: "/",
+    subLinks: [
+      {
+        name: "Domain name search",
+        details: "Find the perfect domain name.",
+        url: "/",
+      },
+      {
+        name: "WHOIS Lookup",
+        details: "Lookup tool for WHOIS.",
+        url: "/",
+      },
+      {
+        name: "Domain transfer",
+        details: "Want to transfer your domain in hostinger ?",
+        url: "/",
+      },
+    ],
   },
   {
     name: "Hosting",
-    url: "/",
+    subLinks: [
+      {
+        name: "Web hosting",
+        details: "For small buisness.",
+        url: "/",
+      },
+      {
+        name: "Cloud hosting",
+        details: "For large scale buisness.",
+        url: "/",
+      },
+      {
+        name: "Wordpress hosting",
+        details: "For wordpress optimization.",
+        url: "/",
+      },
+    ],
   },
   {
     name: "Vps",
-    url: "/",
+    subLinks: [
+      {
+        name: "VPS hosting",
+        details: "Dedicated resource to scale.",
+        url: "/",
+      },
+      {
+        name: "CyberPanel hosting",
+        details: "Control panel with lite speed web server.",
+        url: "/",
+      },
+      {
+        name: "MineCraft hosting",
+        details: "Share your minecraft experience.",
+        url: "/",
+      },
+    ],
   },
   {
     name: "Email",
-    url: "/",
+    subLinks: [
+      {
+        name: "Google workspace email hosting",
+        details: "Get custom Emial and 30GB of storage.",
+        url: "/",
+      },
+      {
+        name: "Hostinger email hosting",
+        details: "Promote your buisness with us.",
+        url: "/",
+      },
+    ],
   },
   {
     name: "Cart",
-    url: "/",
+    url: "/cart",
   },
 ];
 
@@ -72,7 +132,7 @@ function Navbar() {
 
           <nav className="flex items-center gap-8">
             {navLink.map((data, id) => (
-              <Link key={id} href={data.url}>
+              <Link key={id} href="/">
                 <a
                   className={`hidden lg:block font-bold pt-6 pb-5 border-b-2 ${
                     router.pathname === data.url
@@ -85,21 +145,27 @@ function Navbar() {
               </Link>
             ))}
 
-            <Link href="/cpanel-login">
-              <a
-                className="font-bold bg-violet-800 hover:bg-violet-900 duration-200
+            <div className="flex items-center gap-3">
+              <Link href="/cpanel-login">
+                <a
+                  className="font-bold bg-violet-800 hover:bg-violet-900 duration-200
                text-white pt-3 pb-2 mb-1 px-8 rounded-lg"
-              >
-                Login
-              </a>
-            </Link>
+                >
+                  Login
+                </a>
+              </Link>
 
-            <div className="lg:hidden cursor-pointer text-3xl hover:text-violet-700 duration-200">
-              <HiMenuAlt3 />
+              <div
+                onClick={openMenu}
+                className="lg:hidden cursor-pointer text-3xl hover:text-violet-700 duration-200"
+              >
+                <HiMenuAlt3 />
+              </div>
             </div>
           </nav>
         </div>
       </header>
+      {isOpen && <MobileMenu data={navLink} setIsOpen={setIsOpen} isOpen={isOpen}/>}
 
       {/* <header className="absolute inset-0 w-full h-fit z-10 bg-white">
         <div className="bg-violet-200 ">
