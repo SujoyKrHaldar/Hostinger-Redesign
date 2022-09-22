@@ -11,23 +11,23 @@ const navLink = [
   },
   {
     name: "Domain",
-    url: "/domain",
+    url: "/",
   },
   {
     name: "Hosting",
-    url: "/hosting",
+    url: "/",
   },
   {
     name: "Vps",
-    url: "/vps",
+    url: "/",
   },
   {
     name: "Email",
-    url: "/email",
+    url: "/",
   },
   {
     name: "Cart",
-    url: "/cart",
+    url: "/",
   },
 ];
 
@@ -54,11 +54,19 @@ function Navbar() {
 
   return (
     <>
-      <header className={`fixed lg:py-0 py-6 inset-0 w-full h-fit z-50 ${bg} border-b duration`}>
+      <header
+        className={`fixed lg:py-0 py-6 inset-0 w-full h-fit z-50 ${bg} border-b duration`}
+      >
         <div className="container flex items-center justify-between gap-4">
           <Link href="/">
             <a className="inline-block w-[150px]">
-              <Img src="/logo_blue.png" alt="Logo" layout="responsive" w={150} h={30} />
+              <Img
+                src="/logo_blue.png"
+                alt="Logo"
+                layout="responsive"
+                w={150}
+                h={30}
+              />
             </a>
           </Link>
 

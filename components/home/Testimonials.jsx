@@ -55,13 +55,18 @@ function Testimonials() {
           </p>
         </div>
 
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry gutter="1rem">
-            {reviews.map((data, id) => (
-              <ReviewCard key={id} {...data} />
-            ))}
-          </Masonry>
-        </ResponsiveMasonry>
+        <div className="w-full h-[800px] md:h-[545px] overflow-hidden lg:h-full mb-8">
+          <div className="block lg:hidden z-20 absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white"></div>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          >
+            <Masonry gutter="1rem">
+              {reviews.map((data, id) => (
+                <ReviewCard key={id} {...data} />
+              ))}
+            </Masonry>
+          </ResponsiveMasonry>
+        </div>
 
         <Button
           target="_blank"
@@ -71,7 +76,8 @@ function Testimonials() {
           visible="hidden"
         />
       </div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] -z-10">
+
+      <div className="hidden md:block absolute bottom-0 left-0 w-[500px] h-[500px] -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-white z-10"></div>
         <div className="absolute w-full h-full inset-0 bg-gradient-to-b from-white z-10"></div>
         <Img src="/assets/pattern-2.svg" alt="Pattern" />

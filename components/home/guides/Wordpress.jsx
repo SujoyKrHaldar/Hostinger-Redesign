@@ -3,7 +3,7 @@ import Img from "../../tools/Img";
 
 function Wordpress() {
   return (
-    <section className="pb-16 bg-violet-200 z-10 border-b-2 border-violet-300">
+    <section className="py-16 bg-violet-200 z-10 border-b-2 border-violet-300">
       <div className="absolute top-0 right-0 w-[500px] h-full -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-violet-200 z-10"></div>
         <div className="absolute w-full h-full inset-0 bg-gradient-to-b from-violet-200 z-10"></div>
@@ -11,10 +11,10 @@ function Wordpress() {
       </div>
 
       <div className="container">
-        <div className="h-[350px] flex items-center justify-between gap-4">
-          <div className="max-w-md">
+        <div className="xl:h-[350px] xl:flex items-center justify-between gap-4">
+          <div className="max-w-md  sm:mx-auto sm:text-center xl:text-left xl:mx-0">
             <p className="tag">GREAT WORDPRESS EXPERIENCE</p>
-            <h2 className="font-bold">
+            <h2 className="font-bold my-2">
               {" "}
               <span className="font-black text-violet-800">WordPress</span> made
               easy
@@ -29,12 +29,19 @@ function Wordpress() {
             <Button
               href="#"
               text="Learn more"
-              design="bg-violet-500 mt-4 pt-3 pb-2 px-8 text-white hover:bg-violet-700 duration-200"
+              design="bg-violet-500 mt-4 pt-3 pb-2 px-8 text-white hover:bg-violet-700 
+              duration-200 sm:mx-auto xl:mx-0"
             />
           </div>
 
-          <div className="absolute -bottom-16 right-0 w-full max-w-[600px] h-[426px]">
-            <Img src="/assets/wordpress-preview.png" alt="wordpress" />
+          <div className="xl:absolute -bottom-16 right-0 w-full max-w-[600px] mx-auto">
+            <Img
+              src="/assets/wordpress-preview.png"
+              alt="wordpress"
+              layout="responsive"
+              w={600}
+              h={426}
+            />
           </div>
         </div>
       </div>

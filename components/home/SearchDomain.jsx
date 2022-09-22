@@ -12,18 +12,25 @@ function SearchDomain() {
   };
 
   return (
-    <section className="py-16 z-10">
-      <div className="absolute top-0 right-0 w-[75%] h-full -z-10">
+    <section className="py-8 md:py-16 z-10 overflow-hidden">
+
+      <div className="w-full md:absolute top-0 right-0 md:w-[75%] h-full -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
-        <Img src="/assets/earth.png" alt="Domain" />
+        <Img
+          src="/assets/earth.png"
+          alt="Domain"
+          layout="responsive"
+          w={900}
+          h={300}
+        />
       </div>
+
       <div className="container ">
-        <div className="space-y-3 max-w-lg">
+        <div className="space-y-3 max-w-lg mx-auto text-center md:mx-0 md:text-left">
           <p className="tag">Search and buy</p>
           <h2 className="font-bold">
             Find the{" "}
-            <span className="font-black text-violet-700">Perfect Domain</span>{" "}
-            for you.
+            <span className=" font-black text-violet-700">Perfect Domain.</span>
           </h2>
           <p className="max-w-lg">
             Success starts with the domain. Enter domain name of your choice and
@@ -32,7 +39,7 @@ function SearchDomain() {
           </p>
 
           <form
-            className="flex items-center flex-wrap gap-2"
+            className="space-y-3 md:space-y-0 md:flex items-center gap-2"
             onSubmit={handelSubmit}
           >
             <div className="flex-1">
@@ -63,7 +70,7 @@ function SearchDomain() {
             <input
               type="submit"
               value="Search"
-              className="flex-1 max-w-fit bg-violet-800 border border-violet-800 hover:bg-violet-900 duration-200 text-white 
+              className="flex-1 md:max-w-fit bg-violet-800 border border-violet-800 hover:bg-violet-900 duration-200 text-white 
                 py-3 px-6 w-full font-bold cursor-pointer rounded-sm"
             />
           </form>

@@ -18,15 +18,15 @@ const features = [
 
 function ControlPannel() {
   return (
-    <section className="py-16">
-      <div className="absolute bottom-0 left-0 w-[250px] h-[250px] -z-10">
+    <section className="py-8 md:py-16">
+      <div className="hidden xl:block absolute bottom-0 left-0 w-[250px] h-[250px] -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-b from-white z-10"></div>
         <div className="absolute w-full h-full inset-0 bg-gradient-to-l from-white z-10"></div>
         <Img src="/assets/pattern-2.svg" alt="pattern" />
       </div>
 
       <div className="container">
-        <div className="space-y-2">
+        <div className="space-y-2 mb-8">
           <p className="tag">Easy dashboard</p>
           <h2 className="font-bold">
             User-Friendly{" "}
@@ -37,12 +37,12 @@ function ControlPannel() {
             administration tasks. From our user-friendly control panel you can
             create new mailboxes, databases, edit files and more.
           </p>
-          <div className="py-4 flex gap-4 justify-start">
+          <div className="py-4 md:flex gap-4 justify-start">
             {features.map((data, id) => (
               <div
                 key={id}
-                className="max-w-[230px] space-y-1 bg-gradient-to-r border-2
-                   border-violet-100 from-violet-100 to-violet-50 p-5"
+                className="w-full md:max-w-[230px] space-y-1 bg-gradient-to-r border-2
+                   border-violet-100 from-violet-100 to-violet-50 p-5 mb-4 last:mb-0"
               >
                 <p className="font-bold">{data.name}</p>
                 <p className="text-sm">{data.desp}</p>
@@ -58,11 +58,17 @@ function ControlPannel() {
         </div>
 
         <div
-          className="absolute -top-16 -right-44 w-full max-w-[874px] h-[400px] 
-        -z-10 border-2 border-violet-50 bg-violet-50"
+          className="relative mx-auto xl:mx-0 xl:absolute top-0 right-0 xl:-right-44 w-full max-w-[874px]
+        -z-10 border-2 border-violet-200 xl:border-violet-50 bg-violet-50"
         >
-          <div className="absolute w-1/3 h-full inset-0 bg-gradient-to-r from-white z-10"></div>
-          <Img src="/assets/dashboard-preview.png" alt="Dashboard preview" />
+          <div className="hidden xl:block absolute w-1/3 h-full inset-0 bg-gradient-to-r from-white z-10"></div>
+          <Img
+            src="/assets/dashboard-preview.png"
+            alt="Dashboard preview"
+            layout="responsive"
+            w={874}
+            h={400}
+          />
         </div>
       </div>
     </section>
