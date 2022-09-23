@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import Img from "../tools/Img";
+import { useState, useEffect } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { useRouter } from "next/router";
 import { MdLabelImportant } from "react-icons/md";
@@ -145,7 +145,7 @@ function Navbar() {
                       {data.name}
                     </p>
                     <div
-                      className="space-y-4 duration-300 w-[400px] h-fit 
+                      className="duration-300 w-[400px] h-fit 
                       absolute left-1/2 -translate-x-1/2 bg-violet-100 p-3
                       border border-violet-500 z-20
                       pointer-events-none group-hover:pointer-events-auto
