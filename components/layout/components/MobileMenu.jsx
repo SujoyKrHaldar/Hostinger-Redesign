@@ -30,11 +30,11 @@ function MobileMenu({ data, setIsOpen, isOpen }) {
         <div className="space-y-5 w-full">
           <p className="tag">Menu</p>
           {data.map((link, id) => (
-            <>
+            <div key={id}>
               {link.subLinks ? (
-                <MobMenuDropdown key={id} data={link} setIsOpen={setIsOpen} />
+                <MobMenuDropdown data={link} setIsOpen={setIsOpen} />
               ) : (
-                <Link key={id} href={link.url}>
+                <Link href={link.url}>
                   <a
                     onClick={() => setIsOpen(false)}
                     className="block font-bold text-xl"
@@ -43,7 +43,7 @@ function MobileMenu({ data, setIsOpen, isOpen }) {
                   </a>
                 </Link>
               )}
-            </>
+            </div>
           ))}
         </div>
       </div>
