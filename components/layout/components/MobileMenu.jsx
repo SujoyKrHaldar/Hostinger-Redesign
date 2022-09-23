@@ -10,7 +10,7 @@ function MobileMenu({ data, setIsOpen, isOpen }) {
     >
       <div
         className={`flex-1 px-12 py-8 h-full max-w-[460px] bg-white border-l-2 border-violet-500
-          flex items-center justify-start pointer-events-auto duration-300 overflow-scroll
+          flex items-center justify-start pointer-events-auto duration-300 
           ${
             isOpen
               ? " translate-x-0 opacity-100 duration-200"

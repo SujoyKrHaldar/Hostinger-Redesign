@@ -5,15 +5,11 @@ import MobileMenu from "./components/MobileMenu";
 import { useState } from "react";
 import navLink from "./Navlinks";
 
-
-
 function CustomNavbar() {
-
   const [isOpen, setIsOpen] = useState(false);
-    const openMenu = () => {
-      setIsOpen(true);
-    };
-
+  const openMenu = () => {
+    setIsOpen(true);
+  };
 
   return (
     <>
