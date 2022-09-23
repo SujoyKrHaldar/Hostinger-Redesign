@@ -45,6 +45,14 @@ function MobileMenu({ data, setIsOpen, isOpen }) {
               )}
             </div>
           ))}
+          <Link href="/cpanel-login">
+            <a
+              onClick={() => setIsOpen(false)}
+              className="block font-bold text-xl"
+            >
+              Login
+            </a>
+          </Link>
         </div>
       </div>
     </section>
